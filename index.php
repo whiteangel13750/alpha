@@ -10,6 +10,8 @@
     <body>
         <header>
             <nav class="menu">
-                <? require "menu.html" ?>
+            <?php require "menu.php" ?> 
             </nav>
         </header>
+    </body>
+
