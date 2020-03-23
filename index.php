@@ -1,3 +1,24 @@
+<?php
+$page = (isset($_GET["page"]))? $_GET["page"] : "home";
+var_dump($page);
+
+
+switch ($page) {
+    
+    case "entree":
+        $lien = "recettes\Entree.html" ;
+        break;
+    case "plat":
+        $lien = "recettes\plat.html" ;
+        break;
+    case "dessert":
+        $lien = "recettes\dessert.html";
+        break;
+    default : $lien = "home.html";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,8 +31,12 @@
     <body>
         <header>
             <nav class="menu">
-            <?php require "menu.php" ?> 
+            <?php require "menu.php"?> 
             </nav>
         </header>
+
+        <article>
+        <?php require $lien?>
+        </article> 
 </body>
 

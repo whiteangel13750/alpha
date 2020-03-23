@@ -1,26 +1,5 @@
-<?php
-$page = (isset($_GET["page"]))? $_GET["page"] : "accueil";
-var_dump($page);
-
-switch ($page) {
-    case "#":
-        echo "Vous avez demandé l'accueil";
-        break;
-    case "entree":
-        echo "Vous avez demandé les entrées";
-        break;
-    case "plat":
-        echo "Vous avez demandé les plats";
-        break;
-    case "dessert":
-        echo "Vous avez demandé les desserts";
-        break;
-}
-
-?>
-
 <ul>
-        <li><a href ="#">Page d'accueil</a></li>
+        <li><a href ="index.php?page=home">Page d'accueil</a></li>
         <li><a href ="index.php?page=entree">Les entrées</a>
             <ul class="sous-menu">
                 <li><a href ="recettes/entrees/entree1.html">Entrée 1</a></li>
