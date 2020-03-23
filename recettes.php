@@ -59,7 +59,7 @@ $dessert2 = [
 
 
 
- foreach($i= 0; $i < $size; $i++) {
+ for($i= 0; $i < $size; $i++) {
     $titre = $recette_test["titre"];
     $imagech =$recette_test["imagech"];
     $imagetit = $recette_test["imagetit"];
@@ -71,6 +71,8 @@ $dessert2 = [
     $ingrédients =$recette_test["ingredients"];
     $titre3=$recette_test["titre3"];
     $etapes=$recette_test["etapes"];
+
+ };
 
 ?>
 
