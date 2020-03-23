@@ -59,7 +59,7 @@ $dessert2 = [
 
 
 
- for($i= 0; $i < $size; $i++) {
+ foreach($i= 0; $i < $size; $i++) {
     $titre = $recette_test["titre"];
     $imagech =$recette_test["imagech"];
     $imagetit = $recette_test["imagetit"];
@@ -80,7 +80,7 @@ $dessert2 = [
             <title>Dessert 1</title>
             <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="css/style.css">
-        </head>
+    </head>
         
     <body>
         <h1><?php echo $titre?></h1>
