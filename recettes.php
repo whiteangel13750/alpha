@@ -42,7 +42,7 @@ $dessert2 = [
      "etapes"=>"Faire revenir gousses hachées d'ail et les oignons émincés dans un peu d'huile d'olive.///Ajouter la carotte et la branche de céleri hachée puis la viande et faire revenir le tout.///Au bout de quelques minutes, ajouter le vin rouge. Laisser cuire jusqu'à évaporation."
  ];
 
-    $desserts=["$dessert1","$dessert2","$dessert3"];
+    $desserts=['$dessert1','$dessert2','$dessert3'];
 
     $size = sizeof($desserts);
     $titre = "";
@@ -60,18 +60,16 @@ $dessert2 = [
 
 
  for($i= 0; $i < $size; $i++) {
-    $titre = $recette_test["titre"];
-    $imagech =$recette_test["imagech"];
-    $imagetit = $recette_test["imagetit"];
-    $temps =$recette_test["temps"];
-    $personnes =$recette_test["personnes"];
-    $difficulte =$recette_test["difficulte"];
-    $cout =$recette_test["cout"];
-    $titre2=$recette_test["titre2"];
-    $ingrédients =$recette_test["ingredients"];
-    $titre3=$recette_test["titre3"];
-    $etapes=$recette_test["etapes"];
-
+    $titre = $desserts[$i]["titre"];
+    $imagech =$desserts[$i]["imagech"];
+    $imagetit = $desserts[$i]["imagetit"];
+    $temps =$desserts[$i]["temps"];
+    $personnes =$desserts[$i]["personnes"];
+    $difficulte =$desserts[$i]["difficulte"];
+    $cout =$desserts[$i]["titre2"];
+    $ingrédients =$desserts[$i]["ingredients"];
+    $titre3=$desserts[$i]["titre3"];
+    $etapes=$desserts[$i]["etapes"];
  };
 
 ?>
