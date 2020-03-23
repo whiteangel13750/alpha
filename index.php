@@ -1,6 +1,6 @@
 <?php
 $page = (isset($_GET["page"]))? $_GET["page"] : "home";
-var_dump($page);
+// var_dump($page);
 
 
 switch ($page) {
