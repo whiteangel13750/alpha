@@ -1,6 +1,22 @@
 <?php
-$page = (isset($_GET["page"]))? $_GET["page"] : "#";
-var_dump($page)
+$page = (isset($_GET["page"]))? $_GET["page"] : "accueil";
+var_dump($page);
+
+switch ($page) {
+    case "#":
+        echo "Vous avez demandé l'accueil";
+        break;
+    case "entree":
+        echo "Vous avez demandé les entrées";
+        break;
+    case "plat":
+        echo "Vous avez demandé les plats";
+        break;
+    case "dessert":
+        echo "Vous avez demandé les desserts";
+        break;
+}
+
 ?>
 
 <ul>
