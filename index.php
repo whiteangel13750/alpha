@@ -13,5 +13,5 @@
             <?php require "menu.php" ?> 
             </nav>
         </header>
-    </body>
+</body>
 
