@@ -76,19 +76,19 @@ $dessert2 = [
                             <th>Coût</th>
                         </tr>
                         <tr>
-                            <td>".$temps."</td>
-                            <td>".$personnes."</td>
-                            <td>".$difficulte."</td>
-                            <td>".$cout."</td>
+                            <td>"$temps"</td>
+                            <td>"$personnes"</td>
+                            <td>"$difficulte"</td>
+                            <td>"$cout"</td>
                         </tr>
                     </table>
                     <h2>Ingrédients</h2>
                     <ul>      
-                        <li>".$inter[0]."</li>
-                        <li>".$inter[1]."</li>
-                        <li>".$inter[2]."</li>
-                        <li>".$inter[3]."</li>
-                        <li>".$inter[4]."</li>
+                        <li>"$inter[0]"</li>
+                        <li>"$inter[1]"</li>
+                        <li>"$inter[2]"</li>
+                        <li>"$inter[3]"</li>
+                        <li>"$inter[4]"</li>
                         
                     </ul>
                 </div>
