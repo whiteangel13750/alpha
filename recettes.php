@@ -53,17 +53,17 @@ $dessert2 = [
     $liste = "";
 
  for($i= 0; $i < $size; $i++) {
-    $titre .= $desserts[$i][0];
-    $imagech .=$desserts[$i][1];
-    $imagetit .= $desserts[$i][2];
-    $temps .= $desserts[$i][3];
-    $personnes .= $desserts[$i][4];
-    $difficulte .= $desserts[$i][5];
-    $cout .=$desserts[$i][6];
-    $ingredients .= $desserts[$i][7];
+    $titre = $desserts[$i][0];
+    $imagech =$desserts[$i][1];
+    $imagetit = $desserts[$i][2];
+    $temps = $desserts[$i][3];
+    $personnes = $desserts[$i][4];
+    $difficulte = $desserts[$i][5];
+    $cout =$desserts[$i][6];
+    $ingredients = $desserts[$i][7];
     $tab1 = explode("///","$ingredients");
-
-    $etapes.= $desserts[$i][8];
+    
+    $etapes= $desserts[$i][8];
     $tab2 = explode("///","$etapes");
 
     $liste .=
@@ -89,12 +89,6 @@ $dessert2 = [
     </head>
         
     <body>
-        <h1><?php echo $titre?></h1>
-        <div><img src="<?php echo $imagech?>" alt="<?php echo $imagetit?>"></img></div>
-        <div><table><tr><th>Temps de préparation</th><th>Personnes</th><th>Difficulté</th><th>Coût</th></tr><tr><td><?php echo $temps?></td><td><?php echo $personnes?></td><td><?php echo $difficulte?></td><td><?php echo $cout?></td></tr></table>
-        <h2>Ingrédients</h2>
-        <ul><li><?php echo $ingredients?></li></ul></div>
-        <h2>Etapes</h2>
-        <div><ol><li><?php echo $etapes?></li></ol></div>
+        <?php echo $liste ?>
     </body>
 </html>
