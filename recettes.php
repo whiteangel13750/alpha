@@ -63,28 +63,59 @@ $dessert2 = [
     $ingredients = $desserts[$i][7];
     $etapes= $desserts[$i][8];
 
-    $liste .=
-    "<h1>$titre</h1>
-    <div><img src=$imagech alt=$imagetit></img></div>
-    <div><table><tr><th>Temps de préparation</th><th>Personnes</th><th>Difficulté</th><th>Coût</th></tr><tr><td>$temps</td><td>$personnes</td><td>$difficulte</td><td>$cout</td></tr></table>
-    <h2>Ingrédients</h2>
-    <ul><li>$ingredients</li></ul></div>
-    <h2>Etapes</h2>
-    <div><ol><li>$etapes</li></ol></div>";
+    $inter = explode("///", $ingredients);
+    $inter2 = explode("///", $etapes);
+
+    $liste .="<h1 class=\"recipe-head\">".$titre."</h1><div class=\"illustration img-block\"><img src=\"".$imagech."\" alt=\" $imagetit\"></div><section class=\"row bg-light\">
+    <div class=\"col-6\">
+                    <table>
+                        <tr>
+                            <th>Temps de préparation</th>
+                            <th>Personnes</th>
+                            <th>Difficulté</th>
+                            <th>Coût</th>
+                        </tr>
+                        <tr>
+                            <td>".$temps."</td>
+                            <td>".$personnes."</td>
+                            <td>".$difficulte."</td>
+                            <td>".$cout."</td>
+                        </tr>
+                    </table>
+                    <h2>Ingrédients</h2>
+                    <ul>      
+                        <li>".$inter[0]."</li>
+                        <li>".$inter[1]."</li>
+                        <li>".$inter[2]."</li>
+                        <li>".$inter[3]."</li>
+                        <li>".$inter[4]."</li>
+                        
+                    </ul>
+                </div>
+                <div class=\"col-6\">
+                    <h2>Etapes</h2>
+                    <ol>
+                        <li>".$inter2[0]."</li>
+                        <li>".$inter2[1]."</li>
+                        <li>".$inter2[2]."</li>
+                    </ol>
+                </div>
+            </section>";
  };
  
-
 
 ?>
 
 <!DOCTYPE html>
-    <html lang="fr">
+<html lang="fr">
+
     <head>
-            <title>Desserts </title>
-            <meta charset="utf-8">
-            <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Mon livre de recettes</title>
+        <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-        
+    
+       
     <body>
         <?php echo $liste ?>
     </body>

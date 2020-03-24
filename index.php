@@ -5,7 +5,7 @@ $page = (isset($_GET["page"]))? $_GET["page"] : "home";
 switch ($page) {
     
     case "home":
-        $include = "recettes/home.html";
+        $include = "home.html";
         break;
     case "entree":
         $include = "recettes/entree.html";
@@ -17,10 +17,9 @@ switch ($page) {
         $include = "recettes/dessert.html";
         break;
     case "recette":
-        $include = "html/recette.php";
+        $include = "recettes.php";
         break;
     default : $include = "recettes/home.html";
-}
 }
 
 ?>

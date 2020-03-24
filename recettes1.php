@@ -24,6 +24,8 @@ $dessert1 = [
     $ingredients = $dessert1[7];
     $etapes= $dessert1[8];
 
+    $inter = explode("///", $ingredients);
+    $inter2 = explode("///", $etapes);
 
 ?>
 
@@ -56,14 +58,23 @@ $dessert1 = [
                 </table>
                 
                 <h2>Ingrédients</h2>
-                <ul><?php echo $ingredients?></ul>
-            </div>
-
-                <h2>Etapes</h2>
-                <ol><?php echo $etapes?></ol>
-            </div>
-        </section>
-        <hr>
-        <section>
+                    <ul>      
+                        <li><?php echo $inter[0]?></li>
+                        <li><?php echo $inter[1]?></li>
+                        <li><?php echo $inter[2]?></li>
+                        <li><?php echo $inter[3]?></li>
+                        <li><?php echo $inter[4]?></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h2>Etapes</h2>
+                    <ol>
+                        <li><?php echo $inter2[0]?></li>
+                        <li><?php echo $inter2[1]?></li>
+                        <li><?php echo $inter2[2]?></li>
+                    </ol>
+                </div>
+        </section>     
     </body>
 </html>
