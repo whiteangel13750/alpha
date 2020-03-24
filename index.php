@@ -16,9 +16,16 @@ switch ($page) {
     case "dessert":
         $include = "recettes/dessert.html";
         break;
-    case "recette":
-        $include = "recettes.php";
+    case "entrees":
+            $include = "entrees.php";
+            break;
+    case "plats":
+            $include = "plats.php";
+            break;
+    case "desserts":
+        $include = "desserts.php";
         break;
+    
     default : $include = "recettes/home.html";
 }
 
