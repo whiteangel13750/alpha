@@ -61,10 +61,7 @@ $dessert2 = [
     $difficulte = $desserts[$i][5];
     $cout =$desserts[$i][6];
     $ingredients = $desserts[$i][7];
-    $tab1 = explode("///","$ingredients");
-    
     $etapes= $desserts[$i][8];
-    $tab2 = explode("///","$etapes");
 
     $liste .=
     "<h1>$titre</h1>

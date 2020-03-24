@@ -2,19 +2,25 @@
 $page = (isset($_GET["page"]))? $_GET["page"] : "home";
 // var_dump($page);
 
-
 switch ($page) {
     
+    case "home":
+        $include = "recettes/home.html";
+        break;
     case "entree":
-        $lien = "recettes\Entree.html" ;
+        $include = "recettes/entree.html";
         break;
     case "plat":
-        $lien = "recettes\plat.html" ;
+        $include = "recettes/plat.html";
         break;
     case "dessert":
-        $lien = "recettes\dessert.html";
+        $include = "recettes/dessert.html";
         break;
-    default : $lien = "home.html";
+    case "recette":
+        $include = "html/recette.php";
+        break;
+    default : $include = "recettes/home.html";
+}
 }
 
 ?>
@@ -36,7 +42,7 @@ switch ($page) {
         </header>
 
         <article>
-        <?php require $lien?>
+        <?php require $include?>
         </article> 
 </body>
 
