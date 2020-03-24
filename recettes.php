@@ -53,16 +53,21 @@ $dessert2 = [
     $liste = "";
 
  for($i= 0; $i < $size; $i++) {
-    $titre = $desserts[$i][0];
-    $imagech =$desserts[$i][1];
-    $imagetit = $desserts[$i][2];
-    $temps = $desserts[$i][3];
-    $personnes = $desserts[$i][4];
-    $difficulte = $desserts[$i][5];
-    $cout =$desserts[$i][6];
-    $ingredients = $desserts[$i][7];
-    $etapes= $desserts[$i][8];
-    $liste .="<h1>$titre</h1>
+    $titre .= $desserts[$i][0];
+    $imagech .=$desserts[$i][1];
+    $imagetit .= $desserts[$i][2];
+    $temps .= $desserts[$i][3];
+    $personnes .= $desserts[$i][4];
+    $difficulte .= $desserts[$i][5];
+    $cout .=$desserts[$i][6];
+    $ingredients .= $desserts[$i][7];
+    $tab1 = explode("///","$ingredients");
+
+    $etapes.= $desserts[$i][8];
+    $tab2 = explode("///","$etapes");
+
+    $liste .=
+    "<h1>$titre</h1>
     <div><img src=$imagech alt=$imagetit></img></div>
     <div><table><tr><th>Temps de préparation</th><th>Personnes</th><th>Difficulté</th><th>Coût</th></tr><tr><td>$temps</td><td>$personnes</td><td>$difficulte</td><td>$cout</td></tr></table>
     <h2>Ingrédients</h2>
@@ -71,8 +76,8 @@ $dessert2 = [
     <div><ol><li>$etapes</li></ol></div>";
  };
  
- $tab = explode("///", "$ingredients");
- $tab = explode("///", "$etapes");
+
+
 ?>
 
 <!DOCTYPE html>
