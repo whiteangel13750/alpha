@@ -50,7 +50,7 @@ $entree2 = [
     $cout ="";
     $ingredients ="";
     $etapes="";
-
+    $intro ="";
     $liste = "";
 
  for($i= 0; $i < $size; $i++) {
@@ -67,17 +67,13 @@ $entree2 = [
     $inter = explode("///", $ingredients);
     $inter2 = explode("///", $etapes);
 
-    $intro ="
-    <nav class=\"fig-menu row bg-light\">
-        <figure class=\"col-4\">
+    $intro .="
+    <figure class=\"col-4\">
             <h2 class=\"text-center\">$titre</h2>
             <div class=\"img-block\"><img src=\"$imagech\" alt=\"$imagetit\">
             </a></div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a dolor justo. ...</p>
-        </figure>";
-    
-    echo $intro;
-    
+        </figure>";    
 
     $liste .=
     "<h1 class=\"recipe-head\">".$titre."</h1><div class=\"illustration img-block\"><img src=\"".$imagech."\" alt=\" $imagetit\"></div><section class=\"row bg-light\">
@@ -128,7 +124,9 @@ $entree2 = [
         <meta charset="utf-8">
          <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    
+    <nav class="fig-menu row bg-light">
+        <?= $intro ?>
+    </nav>
        
     <body>
         <?php echo $liste ?>

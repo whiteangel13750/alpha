@@ -8,21 +8,12 @@ switch ($page) {
         $include = "home.html";
         break;
     case "entree":
-        $include = "recettes/entree.html";
+        $include = "entrees.php";
         break;
     case "plat":
-        $include = "recettes/plat.html";
+        $include = "plats.php";
         break;
     case "dessert":
-        $include = "recettes/dessert.html";
-        break;
-    case "entrees":
-            $include = "entrees.php";
-            break;
-    case "plats":
-            $include = "plats.php";
-            break;
-    case "desserts":
         $include = "desserts.php";
         break;
     

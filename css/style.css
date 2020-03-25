@@ -222,3 +222,13 @@ table, th, td {
 .items li {
     margin-left: 10px;
 }
+
+#table{
+    background-color : white;
+}
+
+tr, td {
+    background-color : white;
+    border: thin solid #6495ed;
+    width: 50%;
+    }
